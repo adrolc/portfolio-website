@@ -1,0 +1,99 @@
+
+@use 'src/style/sass-utils/mixins';
+@use 'src/style/sass-utils/vars';
+
+section#experience{
+    margin-top: 1.5rem;
+}
+.experience__container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    margin-top: 5rem !important;
+    @include mixins.media(vars.$bp-md)
+    {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5rem;
+        
+        
+    }
+    @include mixins.media(vars.$bp-lg)
+    {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        
+    }
+}
+
+.experience__box {
+    background: vars.$color-bg;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: vars.$transition;
+    border: 1px solid vars.$color-secondary;
+    position: relative;
+    
+    &:hover {
+        border: 1px solid vars.$color-primary;
+    }
+
+    &:hover > .experience__box-icon{
+        background-color: vars.$color-primary;
+    }
+
+    &:hover > .experience__content > .experience__content-item > .experience__content-icon {
+        color: vars.$color-primary;
+    }
+
+}
+
+.experience__box-icon {
+    position: absolute;
+    width: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    padding: 17px;
+    background-color: vars.$color-secondary;
+    border-radius: 50%;
+    transition: vars.$transition;
+}
+
+.experience__box h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: vars.$color-white;
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.7rem;
+    padding: 1rem;
+
+}
+
+.experience__content-item
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.experience__content-icon{
+    transition: vars.$transition;
+    margin-top: 6px;
+    color: vars.$color-secondary;
+}
+
+.experience__content-item small
+{
+    color: vars.$color-light-1;
+    font-size: 13px;
+}
+.experience__content-item h4
+{
+    font-size: 16px;
+}
