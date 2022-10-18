@@ -1,0 +1,6 @@
+@use 'src/style/sass-utils/vars';
+@use 'sass:map';
+
+@function asset-path($asset-name) {
+    @return vars.$assets-path + map.get(vars.$assets, $asset-name);
+}

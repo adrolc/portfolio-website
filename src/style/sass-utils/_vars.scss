@@ -1,0 +1,35 @@
+// Asset paths
+$assets-path: "~/src/assets/";
+$assets: (
+    "bg-overlay": "background_overlay.png",
+    "imgx": "xxx.png",
+);
+
+// Colors
+$color-bg: #10054d;
+$color-bg-light: #190f82;
+$color-primary: #02edf3;
+$color-secondary: #8d22ff;
+$color-secondary-dark: #3d065f;
+$gradient: -webkit-linear-gradient(45deg, #190f82, #10054d);
+$color-white: #fff;
+$color-light-1: rgba(255, 255, 255, 0.6);
+$color-light-2: rgba(255, 255, 255, 0.8);
+$color-light-3: #f1f2f6;
+
+// Breakpoints
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
+
+// Container width
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+$container-xxl: 1320px;
+
+// Others
+$transition: all 400ms ease;

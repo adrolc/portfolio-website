@@ -1,0 +1,18 @@
+// Media query
+@mixin media($breakpoint) {
+    @media (min-width: #{$breakpoint}) {
+        @content;
+    }
+}
+
+
+// Animations
+@mixin animate($animation, $duration, $method, $times, $delay, $fillmode: inherit){
+    animation-name: $animation;
+    animation-duration: $duration;
+    animation-timing-function: $method;
+    animation-delay: $delay;
+    animation-iteration-count: $times;
+    animation-fill-mode: $fillmode;
+
+}
