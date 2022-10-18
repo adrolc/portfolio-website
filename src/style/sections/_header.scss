@@ -1,0 +1,177 @@
+@use 'src/style/sass-utils/mixins';
+@use 'src/style/sass-utils/vars';
+@use 'src/style/sass-utils/animations';
+
+.header
+{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.header__container
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mixins.media(vars.$bp-md)
+    {
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+.header__image
+{
+    position: relative;
+    display: none;
+    margin-top: 50px;
+    @include mixins.media(vars.$bp-md)
+    {
+        display: block;
+        width: 300px;
+    }
+    @include mixins.media(vars.$bp-lg)
+    {
+        width: 400px;
+    }
+    @include mixins.media(vars.$bp-xl)
+    {
+        width: 500px;
+    }
+}
+
+.header__img {
+    position: relative;
+}
+
+.header__glow1 {
+    width: 360px;
+    position: absolute;
+    top: -70px;
+    left: -120px;
+    @include mixins.media(vars.$bp-lg)
+    {
+        width: 430px;
+        top: -80px;
+        left: -140px;
+    }
+    @include mixins.media(vars.$bp-xl)
+    {
+        width: 600px;
+        top: -105px;
+        left: -190px;
+    }
+}
+
+.header__glow2 {
+    position: absolute;
+    top: -85px;
+    left: 40px;
+    @include mixins.media(vars.$bp-lg)
+    {
+        top: -105px;
+        left: 40px;
+    }
+    @include mixins.media(vars.$bp-xl)
+    {
+        top: -150px;
+        left: 70px;
+    }
+}
+
+.header__arrow{
+    text-align: center;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    width: 42px;
+    @include mixins.animate(moveInBottom, 0.5s, ease-out, 1, 1.3s, backwards);
+}
+
+header h1{
+
+    font-size: 40px;
+    @include mixins.animate(moveInLeft, 1s, ease-out, 1, 0);
+}
+header h3{
+    font-size: 30px;
+    @include mixins.animate(moveInRight, 1s, ease-out, 1, 0);
+}
+header h5{
+    font-size: 20px;
+    @include mixins.animate(moveInRight, 1s, ease-out, 1, 0);
+}
+.header__cta
+{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    @include mixins.animate(moveInBottom, 0.5s, ease-out, 1, 0.75s, backwards);
+    @include mixins.media(vars.$bp-md)
+    {
+        justify-content: start;
+    }
+    
+}
+
+
+@include mixins.media(vars.$bp-sm)
+{
+    header h1{
+
+        font-size: 50px;
+    }
+    header h3{
+        font-size: 40px;
+    }
+    header h5{
+        font-size: 30px;
+    }
+}
+
+@include mixins.media(vars.$bp-md)
+{
+    header h1{
+
+        font-size: 45px;
+    }
+    header h3{
+        font-size: 30px;
+    }
+    header h5{
+        font-size: 20px;
+    }
+}
+
+@include mixins.media(vars.$bp-lg)
+{
+    header h1{
+
+        font-size: 60px;
+    }
+    header h3{
+        font-size: 40px;
+    }
+    header h5{
+        font-size: 30px;
+    }
+}
+
+@include mixins.media(vars.$bp-xl)
+{
+    header h1{
+
+        font-size: 80px;
+    }
+    header h3{
+        font-size: 60px;
+    }
+    header h5{
+        font-size: 40px;
+    }
+}
