@@ -1,0 +1,40 @@
+@use 'src/style/sass-utils/vars';
+@use 'src/style/sass-utils/mixins';
+
+.topBar
+{
+    position: relative;
+    margin-top: 2.5rem;
+}
+.topBar__glow {
+    position: absolute;
+    width: 700px;
+    right: -300px;
+    top: -340px;
+}
+
+.topBar__container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topBar__menu
+{
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+.topBar__menu a
+{
+    color: vars.$color-white;
+    
+    &:hover {
+        color: vars.$color-light-1;
+    }
+}
+
+.topBar__logo img
+{
+    width: 80px;
+}
