@@ -1,0 +1,58 @@
+// sass-utils
+@use 'src/style/sass-utils/vars';
+@use 'src/style/sass-utils/functions';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: vars.$color-bg;
+    background-image: url(functions.asset-path("bg-overlay"));
+    background-size: cover;
+    color: vars.$color-white;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+}
+
+a {
+    color: vars.$color-white;
+    transition: vars.$transition;
+    &:hover{
+        color: vars.$color-light-1; 
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+#homepage
+{
+    height: 3000px;
+}
