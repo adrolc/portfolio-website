@@ -8,6 +8,7 @@
 }
 .topBar__glow {
     position: absolute;
+    z-index: -1;
     width: 700px;
     right: -300px;
     top: -340px;
