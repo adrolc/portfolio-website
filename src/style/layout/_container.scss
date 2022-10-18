@@ -1,0 +1,29 @@
+@use 'src/style/sass-utils/vars';
+@use 'src/style/sass-utils/mixins';
+
+.container {
+    margin: 0 auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    width: 100%;
+
+    @include mixins.media(vars.$bp-sm) {
+        max-width: vars.$container-sm;
+    }
+    
+    @include mixins.media(vars.$bp-md) {
+        max-width: vars.$container-md;
+    }
+    
+    @include mixins.media(vars.$bp-lg) {
+        max-width: vars.$container-lg;
+    }
+    
+    @include mixins.media(vars.$bp-xl) {
+        max-width: vars.$container-xl;
+    }
+    
+    @include mixins.media(vars.$bp-xxl) {
+        max-width: vars.$container-xxl;
+    }
+}
