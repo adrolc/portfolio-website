@@ -50,9 +50,29 @@ img {
     object-fit: cover;
 }
 
-
-
-#homepage
+#root
 {
-    height: 3000px;
+    position: relative;
+    overflow-x: hidden;
 }
+.background_glow {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background_glow-1
+{
+    width: 900px;
+    top: 50%;
+    left: -500px;
+    opacity: 50%;
+}
+.background_glow-2
+{
+    opacity: 50%;
+    width: 900px;
+    top: 30%;
+    right: -500px;
+}
+

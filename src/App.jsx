@@ -6,11 +6,15 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
+import GLOW from 'assets/glow1.png'
+
 
 function App() {
   return (
     <>
-    <Nav />
+    <img className='background_glow background_glow-1' src={GLOW} alt="" />
+    <img className='background_glow background_glow-2' src={GLOW} alt="" />
+    <Nav/>
     <TopBar />
     <Header />
     <Experience />
