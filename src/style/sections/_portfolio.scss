@@ -1,0 +1,65 @@
+@use 'src/style/sass-utils/mixins';
+@use 'src/style/sass-utils/vars';
+
+.portfolio__container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    @include mixins.media(vars.$bp-md)
+    {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.6rem
+    }
+    @include mixins.media(vars.$bp-xl)
+    {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.4rem;
+    }
+}
+
+.portfolio__item {
+    background-color: vars.$color-bg-dark;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: vars.$border-width solid vars.$color-secondary;
+    transition: vars.$transition;
+    
+    &:hover {
+        border-color: vars.$color-primary;
+        background-color: vars.$color-bg;
+    }
+
+    &:hover > .portfolio__item-cta > #portfolio__item-btn1 {
+        border-color: vars.$color-primary;
+        &:hover {border-color: transparent;}
+    }
+
+    &:hover > .portfolio__item-cta > #portfolio__item-btn2 {
+        background-color: vars.$color-primary;
+        color: vars.$color-bg;
+        &:hover {background: vars.$color-light-3;}
+    }
+
+}
+
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio__item h3 {
+    margin: 1.2rem 0 2rem;
+    font-size: 17px;
+    @include mixins.media(vars.$bp-sm) {
+        font-size: 18px;
+    }
+}
+
+.portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: start;
+}
