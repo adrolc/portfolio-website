@@ -46,13 +46,13 @@ function Contact() {
               <MdOutlineEmail className='contact__option-icon' />
               <h4>Email</h4>
               <h5>{me["email"]}</h5>
-              <a href={me["emailLink"]} target="_blank">Send a message</a>
+              <a href={me["emailLink"]} target="_blank" rel="noreferrer">Send a message</a>
             </article>
             <article className="contact__option">
               <RiMessengerLine className='contact__option-icon' />
               <h4>Messenger</h4>
               <h5>{me["messenger"]}</h5>
-              <a href={me["messengerLink"]} target="_blank">Send a message</a>
+              <a href={me["messengerLink"]} target="_blank" rel="noreferrer">Send a message</a>
             </article>
           </div>
           <div className="contact__form">

@@ -17,8 +17,22 @@ function Portfolio() {
                   </div>
                   <h3>{title}</h3>
                   <div className="portfolio__item-cta">
-                    <a href={github} id="portfolio__item-btn1" className='btn btn-secondary-outline' target='_blank'>Github</a>
-                    <a href={demo} id="portfolio__item-btn2" className='btn btn-secondary' target='_blank'>Live Demo</a>
+                    <a
+                      href={github}
+                      id="portfolio__item-btn1"
+                      className='btn btn-secondary-outline'
+                      target='_blank'
+                      rel="noreferrer">
+                      Github
+                    </a>
+                    <a
+                      href={demo}
+                      id="portfolio__item-btn2"
+                      className='btn btn-secondary'
+                      target='_blank'
+                      rel="noreferrer">
+                      Live Demo
+                    </a>
                   </div>
                 </article>
               )

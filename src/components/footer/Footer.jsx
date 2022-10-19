@@ -10,9 +10,7 @@ import {nav} from 'data/nav'
 function Footer() {
   return (
     <footer>
-        <a href="#" className="footer__logo">
-            <img src={LOGO} alt="" />
-        </a>
+        <img className='footer__logo' src={LOGO} alt="" />
         <ul className="footer__navlinks">
             {
                 nav.map(({id, name, link}) => {

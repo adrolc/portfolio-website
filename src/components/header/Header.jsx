@@ -5,7 +5,7 @@ import GLOW2 from 'assets/glow2.png'
 
 const Header = () => {
   return (
-    <header className='header'>
+    <header id='home' className='header'>
       <div className="container header__container">
         <div className="header__content">
           <h3>Hi! I'm</h3>
