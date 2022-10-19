@@ -1,5 +1,4 @@
 import {AiOutlineHome} from 'react-icons/ai'
-import {BiUser} from 'react-icons/bi'
 import {MdOutlineComputer} from 'react-icons/md'
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import {AiOutlineMessage} from 'react-icons/ai'
