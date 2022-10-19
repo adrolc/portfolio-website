@@ -1,3 +1,4 @@
+import Nav from './components/nav/Nav'
 import TopBar from './components/topbar/TopBar'
 import Header from './components/header/Header'
 import Experience from './components/experience/Experience'
@@ -9,6 +10,7 @@ import Footer from './components/footer/Footer'
 function App() {
   return (
     <>
+    <Nav />
     <TopBar />
     <Header />
     <Experience />

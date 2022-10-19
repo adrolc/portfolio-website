@@ -9,6 +9,7 @@
 @use 'src/style/components/sections';
 
 // sections
+@import 'sections/nav';
 @import 'sections/topbar';
 @import 'sections/header';
 @import 'sections/experience';
