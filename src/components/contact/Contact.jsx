@@ -12,6 +12,9 @@ import {useState} from 'react'
 // Alert component
 import Alert from 'components/contact/Alert'
 
+// me
+import {me} from 'data/me'
+
 function Contact() {
 
   const [alertState, setAlertState] = useState('none')
@@ -42,14 +45,14 @@ function Contact() {
             <article className="contact__option">
               <MdOutlineEmail className='contact__option-icon' />
               <h4>Email</h4>
-              <h5>adrianolczakdev@gmail.com</h5>
-              <a href="mailto:adrianolczakti@gmail.com" target="_blank">Send a message</a>
+              <h5>{me["email"]}</h5>
+              <a href={me["emailLink"]} target="_blank">Send a message</a>
             </article>
             <article className="contact__option">
               <RiMessengerLine className='contact__option-icon' />
               <h4>Messenger</h4>
-              <h5>adrian.olczak.359</h5>
-              <a href="https://m.me/adrian.olczak.359" target="_blank">Send a message</a>
+              <h5>{me["messenger"]}</h5>
+              <a href={me["messengerLink"]} target="_blank">Send a message</a>
             </article>
           </div>
           <div className="contact__form">
