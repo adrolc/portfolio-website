@@ -5,6 +5,7 @@
 section#experience{
     margin-top: 1.5rem;
 }
+
 .experience__container
 {
     display: grid;
@@ -27,16 +28,17 @@ section#experience{
 }
 
 .experience__box {
-    background: vars.$color-bg;
+    background: vars.$color-bg-dark;
     padding: 2rem 1rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: vars.$border-width solid transparent;
     transition: vars.$transition;
-    border: 1px solid vars.$color-secondary;
+    border: vars.$border-width solid vars.$color-secondary;
     position: relative;
     
     &:hover {
-        border: 1px solid vars.$color-primary;
+        border: vars.$border-width solid vars.$color-primary;
+        background: vars.$color-bg;
     }
 
     &:hover > .experience__box-icon{
