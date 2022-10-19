@@ -1,0 +1,112 @@
+@use 'src/style/sass-utils/vars';
+@use 'src/style/sass-utils/mixins';
+@use 'src/style/sass-utils/animations';
+
+
+.container.contact__container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    @include mixins.media(vars.$bp-lg)
+    {
+        grid-template-columns: 30% 58%;
+        gap: 12%;
+    }
+
+}
+
+.contact__options
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option
+{
+    background-color: vars.$color-bg-dark;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: vars.$border-width solid vars.$color-primary;
+    transition: vars.$transition;
+    &:hover {
+        background-color: vars.$color-bg;
+        border-color: vars.$color-primary;
+    }
+}
+
+.contact__option-icon
+{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+    display: inline-block;
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+    color: vars.$color-primary;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: vars.$color-bg;
+    border: vars.$border-width solid vars.$color-primary;
+    resize: none;
+    color: vars.$color-white;
+    &::placeholder{
+        font-family: 'Poppins', sans-serif;
+    }
+    &::-webkit-input-placeholder{
+        font-family: 'Poppins', sans-serif;
+    }
+    &:-ms-input-placeholder{
+        font-family: 'Poppins', sans-serif;
+    }
+    &:-moz-placeholder{
+        font-family: 'Poppins', sans-serif;
+    }
+    &::-moz-placeholder{
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+// Contact alert styles
+.contact__alert-container
+{
+    height: 50px;
+}
+
+.contact__alert {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact__alert-icon
+{
+    font-size: 2.2rem;
+    color: vars.$color-primary;
+}
+.contact__alert-label
+{
+    color: vars.$color-primary;
+    font-size: 1rem;
+    
+}
+
+.contact__alert-iconSending
+{
+    @include mixins.animate(rotate, 1s, linear, infinite, 0);
+}
