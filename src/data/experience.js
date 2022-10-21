@@ -12,16 +12,21 @@ const frontend = [
     {
       id: 3,
       technology: 'SASS',
-      level: 'Basic'
+      level: 'Intermediate'
     },
     {
       id: 4,
       technology: 'Bootstrap',
-      level: 'Intermediate'
+      level: 'Basic'
     },
     {
       id: 5,
       technology: 'JavaScript',
+      level: 'Basic'
+    },
+    {
+      id: 6,
+      technology: 'React',
       level: 'Basic'
     },
   ]
@@ -29,22 +34,27 @@ const frontend = [
   const backend = [
     {
       id: 1,
-      technology: 'PHP',
-      level: 'Intermediate'
-    },
-    {
-      id: 2,
       technology: 'Python',
       level: 'Advanced'
     },
     {
+      id: 2,
+      technology: 'Django',
+      level: 'Basic'
+    },
+    {
       id: 3,
+      technology: 'PHP',
+      level: 'Intermediate'
+    },
+    {
+      id: 4,
       technology: 'C/C++',
       level: 'Basic'
     },
     {
-      id: 4,
-      technology: 'MySQL',
+      id: 5,
+      technology: 'SQL',
       level: 'Intermediate'
     },
   ]
@@ -57,12 +67,12 @@ const frontend = [
     },
     {
       id: 2,
-      technology: 'Agile',
-      level: 'Basic'
+      technology: 'OOP',
+      level: 'Intermediate'
     },
     {
       id: 3,
-      technology: 'Clean code',
+      technology: 'MVC',
       level: 'Basic'
     },
   ]

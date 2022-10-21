@@ -28,7 +28,7 @@ function Portfolio() {
                     <a
                       href={demo}
                       id="portfolio__item-btn2"
-                      className='btn btn-secondary'
+                      className={demo === '' ? 'btn btn-secondary disabled-link' : 'btn btn-secondary'}
                       target='_blank'
                       rel="noreferrer">
                       Live Demo
