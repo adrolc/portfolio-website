@@ -19,32 +19,47 @@
 }
 
 .portfolio__item {
+    position: relative;
     background-color: vars.$color-bg-dark;
     padding: 1.2rem;
-    border-radius: 2rem;
-    border: vars.$border-width solid vars.$color-secondary;
-    transition: vars.$transition;
-    
-    &:hover {
+    border-radius: 3px 3px 0 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-left: vars.$border-width-bar solid vars.$color-secondary;
+        border-top: vars.$border-width-bar solid vars.$color-secondary;
+        height: 40px;
+        width: 40px;
+        transition: vars.$transition;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        border-bottom: vars.$border-width-bar solid vars.$color-secondary;
+        border-right: vars.$border-width-bar solid vars.$color-secondary;
+        height: 40px;
+        width: 40px;
+        transition: vars.$transition;
+    }
+    &:hover:before {
         border-color: vars.$color-primary;
-        background-color: vars.$color-bg;
+        margin: -5px;
     }
-
-    &:hover > .portfolio__item-cta > #portfolio__item-btn1 {
+    &:hover:after {
         border-color: vars.$color-primary;
-        &:hover {border-color: transparent;}
+        margin: -5px;
     }
-
-    &:hover > .portfolio__item-cta > #portfolio__item-btn2 {
-        background-color: vars.$color-primary;
-        color: vars.$color-bg;
-        &:hover {background: vars.$color-light-3;}
-    }
-
 }
 
+
+
 .portfolio__item-image {
-    border-radius: 1.5rem;
+    border-radius: 3px;
     overflow: hidden;
 }
 
