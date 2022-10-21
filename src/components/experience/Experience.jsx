@@ -65,7 +65,7 @@ function Experience() {
               {
                 others.map(({id, technology, level}) => {
                   return (
-                    <article className="experience__content-item">
+                    <article key={id} className="experience__content-item">
                       <BsCheckCircleFill className='experience__content-icon' />
                       <div>
                         <h4>{technology}</h4>

@@ -15,7 +15,7 @@ function Footer() {
             {
                 nav.map(({id, name, link}) => {
                     return (
-                        <li><a key={id} href={link}>{name}</a></li>
+                        <li key={id}><a href={link}>{name}</a></li>
                     )
                 }) 
             }
