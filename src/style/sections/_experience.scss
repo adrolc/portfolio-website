@@ -28,27 +28,22 @@ section#experience{
 }
 
 .experience__box {
+    position: relative;
     background: vars.$color-bg-dark;
     padding: 2rem 1rem;
-    border-radius: 2rem;
-    border: vars.$border-width solid transparent;
+    border-bottom: vars.$border-width-bar solid vars.$color-secondary;
+    border-radius: 3px 3px 0 0;
     transition: vars.$transition;
-    border: vars.$border-width solid vars.$color-secondary;
-    position: relative;
-    
-    &:hover {
-        border: vars.$border-width solid vars.$color-primary;
-        background: vars.$color-bg;
-    }
 
-    &:hover > .experience__box-icon{
+    &:nth-child(2) {
+        border-color: vars.$color-primary;
+    }
+    &:nth-child(2) > .experience__box-icon {
         background-color: vars.$color-primary;
     }
-
-    &:hover > .experience__content > .experience__content-item > .experience__content-icon {
+    &:nth-child(2)  > .experience__content > .experience__content-item > .experience__content-icon {
         color: vars.$color-primary;
     }
-
 }
 
 .experience__box-icon {
