@@ -20,20 +20,17 @@
 {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
 }
 
 .contact__option
 {
     background-color: vars.$color-bg-dark;
     padding: 1.2rem;
-    border-radius: 1.2rem;
     text-align: center;
-    border: vars.$border-width solid vars.$color-primary;
     transition: vars.$transition;
-    &:hover {
-        background-color: vars.$color-bg;
-        border-color: vars.$color-primary;
+
+    &:nth-child(2) {
+        background-color: vars.$color-bg-light;
     }
 }
 
@@ -59,9 +56,8 @@ form {
 input, textarea {
     width: 100%;
     padding: 1.5rem;
-    border-radius: 0.5rem;
-    background-color: vars.$color-bg;
-    border: vars.$border-width solid vars.$color-primary;
+    background-color: vars.$color-bg-dark;
+    border-bottom: 2px solid vars.$color-bg-light;
     resize: none;
     color: vars.$color-white;
     &::placeholder{
