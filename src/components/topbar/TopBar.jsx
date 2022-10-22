@@ -10,7 +10,7 @@ function TopBar() {
                 <img src={LOGO} alt="adrian olczak" />
             </div>
             <div className="topBar__menu">
-                <a href="https://adrianolczak.pl">Blog</a>
+                <a href="https://adrianolczak.pl/blog">Blog</a>
                 <a href="https://github.com/adrolc" target="_blank" rel='noreferrer'>GitHub</a>
             </div>
         </div>
